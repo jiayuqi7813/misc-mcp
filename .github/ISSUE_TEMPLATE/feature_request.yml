@@ -39,6 +39,13 @@ body:
       placeholder: 例如：misc-mcp 0.1.0, Python 3.13, macOS 15
     validations:
       required: false
+  - type: attachments
+    id: ctf_files
+    attributes:
+      label: CTF 题目文件/样例数据
+      description: 请上传题目压缩包或样例数据（支持 zip/7z/tar、图片、文本、pcap 等）。如文件过大，可提供网盘链接或最小复现样例。
+    validations:
+      required: false
   - type: textarea
     id: additional
     attributes:
