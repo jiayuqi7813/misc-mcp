@@ -1,0 +1,21 @@
+[project]
+name = "misc-mcp"
+version = "0.1.0"
+description = "CTF Misc 方向 All-in-One MCP 工具集"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [
+    { name = "jiayuqi7813", email = "1783671926@qq.com" }
+]
+urls = { "Commercial-licensing" = "mailto:1783671926@qq.com" }
+requires-python = ">=3.13"
+dependencies = [
+    "mcp>=1.0.0",
+]
+
+[project.scripts]
+misc-mcp = "misc_mcp.server:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
